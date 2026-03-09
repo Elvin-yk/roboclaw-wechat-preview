@@ -1,0 +1,58 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="40" x2="1040" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F7F6"/>
+      <stop offset="1" stop-color="#E6ECEA"/>
+    </linearGradient>
+    <linearGradient id="green" x1="222" y1="184" x2="838" y2="498" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42C883"/>
+      <stop offset="1" stop-color="#169B63"/>
+    </linearGradient>
+    <filter id="shadow" x="122" y="76" width="958" height="554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="26"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.121569 0 0 0 0 0.12549 0 0 0 0.14 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="938" cy="142" r="92" fill="#DDE7E4"/>
+  <circle cx="1032" cy="588" r="126" fill="#E2EAE8"/>
+  <circle cx="174" cy="576" r="98" fill="#EDF3F1"/>
+  <g filter="url(#shadow)">
+    <rect x="174" y="126" width="852" height="450" rx="28" fill="#FCFDFC"/>
+    <rect x="174" y="126" width="852" height="450" rx="28" stroke="#D9E4E0" stroke-width="2"/>
+  </g>
+  <rect x="214" y="170" width="282" height="120" rx="22" fill="#F4F8F7"/>
+  <rect x="214" y="170" width="282" height="120" rx="22" stroke="#D9E4E0" stroke-width="2"/>
+  <text x="248" y="218" fill="#6A7A77" font-family="Arial, sans-serif" font-size="20" letter-spacing="2">REAL WORLD INPUT</text>
+  <text x="248" y="258" fill="#203032" font-family="Arial, sans-serif" font-size="38" font-weight="700">Robot Body</text>
+  <text x="248" y="286" fill="#203032" font-family="Arial, sans-serif" font-size="38" font-weight="700">Sensor Task</text>
+  <rect x="744" y="398" width="236" height="114" rx="22" fill="#F4F8F7"/>
+  <rect x="744" y="398" width="236" height="114" rx="22" stroke="#D9E4E0" stroke-width="2"/>
+  <text x="778" y="446" fill="#6A7A77" font-family="Arial, sans-serif" font-size="20" letter-spacing="2">RUNTIME</text>
+  <text x="778" y="486" fill="#203032" font-family="Arial, sans-serif" font-size="34" font-weight="700">RoboClaw</text>
+  <circle cx="556" cy="346" r="94" fill="url(#green)"/>
+  <circle cx="556" cy="346" r="56" fill="#F6FFFB"/>
+  <circle cx="556" cy="346" r="12" fill="#1E8A60"/>
+  <path d="M417 343H500" stroke="#1D2A2D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M611 343H684" stroke="#1D2A2D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M694 343C728 343 758 316 758 282V236" stroke="#1D2A2D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M768 220L862 220" stroke="#1D2A2D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M714 359C742 359 764 381 764 409V440" stroke="#1D2A2D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M772 456L812 456" stroke="#1D2A2D" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="417" cy="343" r="24" fill="#253538"/>
+  <circle cx="500" cy="343" r="28" fill="#253538"/>
+  <circle cx="684" cy="343" r="28" fill="#253538"/>
+  <circle cx="758" cy="220" r="24" fill="#253538"/>
+  <circle cx="862" cy="220" r="28" fill="#253538"/>
+  <circle cx="812" cy="456" r="24" fill="#253538"/>
+  <path d="M286 366C348 332 410 322 470 332" stroke="#42C883" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M646 216C704 178 774 164 848 174" stroke="#42C883" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M642 464C708 500 790 512 884 494" stroke="#42C883" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <text x="214" y="624" fill="#203032" font-family="Arial, sans-serif" font-size="60" font-weight="700">RoboClaw</text>
+  <text x="214" y="664" fill="#6A7A77" font-family="Arial, sans-serif" font-size="24" letter-spacing="1.5">A FRAMEWORK FOR EMBODIED INTELLIGENCE IN THE REAL WORLD</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="146" y1="94" x2="1024" y2="608" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F9F7"/>
+      <stop offset="1" stop-color="#E7EFEC"/>
+    </linearGradient>
+    <linearGradient id="sim" x1="182" y1="210" x2="518" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E363A"/>
+      <stop offset="1" stop-color="#112124"/>
+    </linearGradient>
+    <linearGradient id="real" x1="678" y1="210" x2="1018" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2CC486"/>
+      <stop offset="1" stop-color="#149B65"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="32" fill="url(#bg)"/>
+  <text x="126" y="120" fill="#213133" font-family="Arial, sans-serif" font-size="54" font-weight="700">Simulation ↔ Real Loop</text>
+  <text x="128" y="160" fill="#71817D" font-family="Arial, sans-serif" font-size="24" letter-spacing="1.2">同一套任务与技能，在仿真和现实之间闭环复用</text>
+  <rect x="150" y="206" width="386" height="316" rx="30" fill="url(#sim)"/>
+  <text x="194" y="270" fill="#DFF0EA" font-family="Arial, sans-serif" font-size="24" letter-spacing="2">SIMULATION</text>
+  <text x="194" y="322" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">策略预热</text>
+  <text x="194" y="376" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">课程生成</text>
+  <text x="194" y="430" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">批量训练</text>
+  <rect x="664" y="206" width="386" height="316" rx="30" fill="url(#real)"/>
+  <text x="708" y="270" fill="#E7FFF4" font-family="Arial, sans-serif" font-size="24" letter-spacing="2">REAL WORLD</text>
+  <text x="708" y="322" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">真实执行</text>
+  <text x="708" y="376" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">失败回收</text>
+  <text x="708" y="430" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">评估复盘</text>
+  <circle cx="600" cy="364" r="92" fill="#FBFFFD" stroke="#D5E2DD" stroke-width="2"/>
+  <text x="551" y="345" fill="#203032" font-family="Arial, sans-serif" font-size="20" letter-spacing="1.5">SHARED</text>
+  <text x="540" y="382" fill="#203032" font-family="Arial, sans-serif" font-size="34" font-weight="700">Task</text>
+  <text x="535" y="418" fill="#203032" font-family="Arial, sans-serif" font-size="34" font-weight="700">Skill</text>
+  <path d="M538 364C500 364 486 364 460 364" stroke="#223235" stroke-width="12" stroke-linecap="round"/>
+  <path d="M662 364C700 364 714 364 740 364" stroke="#223235" stroke-width="12" stroke-linecap="round"/>
+  <path d="M468 355L438 364L468 373" stroke="#223235" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M732 355L762 364L732 373" stroke="#223235" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M354 552C446 612 758 612 850 552" stroke="#7EC9A6" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 18"/>
+  <path d="M850 548L890 548L872 580" stroke="#7EC9A6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M846 594C754 646 446 646 354 594" stroke="#9EB3AC" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 18"/>
+  <path d="M354 590L314 590L332 558" stroke="#9EB3AC" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="428" y="640" fill="#219265" font-family="Arial, sans-serif" font-size="24" font-weight="700">Training → Deployment</text>
+  <text x="438" y="684" fill="#667A75" font-family="Arial, sans-serif" font-size="24" font-weight="700">Execution → Data → Evaluation</text>
+</svg>
