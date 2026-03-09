@@ -88,6 +88,27 @@
         margin: 0 0 18px;
       }
 
+      .article-figure {
+        margin: 24px 0 28px;
+      }
+
+      .article-figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid #e2e8e5;
+        background: #f6faf8;
+      }
+
+      .article-figure figcaption {
+        margin-top: 8px;
+        color: var(--subtle);
+        font-size: 13px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
       .content h2 {
         margin: 34px 0 14px;
         color: var(--heading);
@@ -190,6 +211,11 @@
         </div>
 
         <div class="content" id="js_content">
+          <figure class="article-figure">
+            <img src="assets/hero-embodied.svg" alt="RoboClaw 概念头图，展示机器人本体、传感器、任务和框架运行时之间的连接关系" />
+            <figcaption>RoboClaw 关注的不是单点演示，而是把本体、传感器、任务和运行框架真正组织起来。</figcaption>
+          </figure>
+
           <p>这两年，具身智能正在快速升温。</p>
           <p>
             从大模型，到 VLA，到世界模型，从仿真训练，到真实机器人部署，越来越多团队开始相信：下一代 AI，不会只停留在屏幕里，它会真正进入物理世界，理解环境、调用工具、完成任务。
@@ -298,6 +324,11 @@
           <p>对于企业来说，RoboClaw 应该是一块地基，而不是一堵墙。</p>
 
           <h2>我们认为，RoboClaw 至少应该有这几层核心架构</h2>
+          <figure class="article-figure">
+            <img src="assets/architecture-stack.svg" alt="RoboClaw 六层架构图，从统一控制平面到底层仿真与学习层逐层展开" />
+            <figcaption>从控制平面到仿真学习，RoboClaw 更像一套分层协作的能力栈。</figcaption>
+          </figure>
+
           <h3>第一层：统一控制平面</h3>
           <p>
             这是整个系统的中枢。它负责连接用户、机器人、本体节点、传感器节点、仿真节点、技能节点和任务流，统一管理权限、注册、调度、日志与事件。
@@ -372,6 +403,11 @@
             <li>同一套 episode 记录，可以贯穿训练、推理、评估和复盘</li>
           </ul>
           <p>现实世界是目标，仿真世界是加速器。两者并不冲突。</p>
+
+          <figure class="article-figure">
+            <img src="assets/sim-real-loop.svg" alt="仿真与现实闭环图，展示任务和技能在 simulation 与 real world 间循环复用" />
+            <figcaption>同一套任务与技能，不应被割裂在仿真和现实之间，而应形成闭环复用。</figcaption>
+          </figure>
 
           <h2>我们为什么现在做这件事</h2>
           <p>因为我们相信，具身智能不会只属于少数顶尖实验室，也不会只属于少数封闭系统。</p>
