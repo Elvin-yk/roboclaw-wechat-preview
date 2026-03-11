@@ -1,7 +1,6 @@
 # RoboClaw：首个面向具身智能的AI助手
 
 上海交通大学 MINT 实验室  
-2026-03-11
 
 ![RoboClaw 概念头图，展示让机器人快速上手的通用AI助手，以及全本体抽象、快速熟悉、技能模块化、虚实联动和科研工作台等核心能力](assets/hero-embodied-custom.webp)
 
