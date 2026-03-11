@@ -28,7 +28,7 @@ OpenClaw 给了我们一个很重要的起点：作为个人AI助手，它已经
 
 但机器人系统比数字世界的助手更复杂。它有本体、有传感器、有运动学、有空间约束、有安全边界，也会在真实世界里出错。
 
-![RoboClaw 分层架构总览图，展示 OpenClaw 脑层、RoboClaw runtime、中间执行层，以及仿真和真机后端的关系](assets/roboclaw-architecture-overview.png)
+![RoboClaw 简洁版架构图，展示助手层、具身层、执行层和载体层，以及具身层的五个核心能力](assets/roboclaw-architecture-simple.svg)
 
 ## 我们现在认同的架构
 
