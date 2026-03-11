@@ -1,9 +1,11 @@
-# RoboClaw：首个具身智能时代的AI助手
+# RoboClaw：首个面向具身智能的AI助手
 
 上海交通大学 MINT 实验室  
 2026-03-11 19:30
 
 ![RoboClaw 概念头图，展示让机器人快速上手的通用AI助手，以及全本体抽象、快速熟悉、技能模块化、虚实联动和科研工作台等核心能力](assets/hero-embodied-custom.webp)
+
+我们推出首个面向具身智能的AI助手，邀请开发者加入社区共建，项目地址：https://github.com/MINT-SJTU/RoboClaw.
 
 先说明白一件事：RoboClaw 还在非常早期的阶段。
 
