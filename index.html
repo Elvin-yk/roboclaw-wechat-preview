@@ -226,18 +226,18 @@
             <p><strong>它要做的是一个面向任意本体、任意环境、任意任务的具身智能AI助手。</strong></p>
           </div>
 
-          <p>OpenClaw 给了我们一个很重要的起点：控制平面、节点接入、会话管理、工具编排这套思路是成立的。</p>
+          <p>OpenClaw 给了我们一个很重要的起点：作为 personal AI assistant，它已经把节点接入、会话管理、工具编排和多入口交互组织成了一个完整系统。</p>
           <p>但机器人系统比数字世界的助手更复杂。它有本体、有传感器、有运动学、有空间约束、有安全边界，也会在真实世界里出错。</p>
-          <p>所以在 RoboClaw 里，OpenClaw 更像是 <strong>Control Plane</strong>，而不是整个系统本身。</p>
+          <p>所以在 RoboClaw 里，我们借用的不是一个“平面”概念，而是 OpenClaw 作为上层助手系统的组织方式。</p>
           <figure class="article-figure">
             <img src="assets/pdf-pages/page-04.webp" alt="RoboClaw 核心哲学图，解释从任务、本体、模型到现实行动的整体逻辑" />
           </figure>
 
           <h2>我们现在认同的架构</h2>
-          <p><strong>1. Control Plane</strong>：负责用户、会话、Agent 编排、工具路由和远程接入。</p>
-          <p><strong>2. Embodiment Plane</strong>：负责 body schema、sensor schema、capability graph、运动学和语义动作。</p>
-          <p><strong>3. Execution Plane</strong>：负责 ROS2 runtime、ros2_control、controller manager、action/service/topic adapter、安全和 supervisor。</p>
-          <p><strong>4. Learning Plane</strong>：负责 episode、demonstration、replay、evaluation，以及未来的 few-shot 和 life-long learning。</p>
+          <p><strong>1. 上层助手系统</strong>：负责用户、会话、Agent 编排、工具路由和远程接入。</p>
+          <p><strong>2. 具身层</strong>：负责 body schema、sensor schema、capability graph、运动学和语义动作。</p>
+          <p><strong>3. 执行层</strong>：负责 ROS2 runtime、ros2_control、controller manager、action/service/topic adapter、安全和 supervisor。</p>
+          <p><strong>4. 学习层</strong>：负责 episode、demonstration、replay、evaluation，以及未来的 few-shot 和 life-long learning。</p>
           <p>这里我们最看重的一点，是 <strong>familiarization</strong>。</p>
           <p>一个新本体接进来，系统不应该假装自己立刻全懂。它应该先枚举关节和传感器，做小幅试探动作，建立动作和观测的对应关系，校验 home、limits、direction，再形成当前状态下的 capability graph。</p>
           <p>这也是我们为什么不希望把机器人差异都丢给 prompt，更不希望大模型直接输出低级 joint command。更合理的路径应该是：</p>
@@ -252,7 +252,7 @@
             <p><strong>Gateway -> RoboClaw typed contracts -> bounded planner -> SO101 body adapter -> PyBullet execution adapter</strong></p>
           </div>
           <p>现在可以通过 <code>roboclaw.so101.run</code> 这样的 OpenClaw 风格入口，进入 RoboClaw runtime，再驱动 PyBullet 里的 <code>SO101</code> 执行一个受控的 wave 动作，并留下 JSON trace。</p>
-          <p>这条路径还很窄，但它是真的。我们也明确承认：动态 embodiment discovery 还没完成，ROS2 真机执行还没完成，learning plane 也还没落地。</p>
+          <p>这条路径还很窄，但它是真的。我们也明确承认：动态 embodiment discovery 还没完成，ROS2 真机执行还没完成，学习层也还没落地。</p>
           <figure class="article-figure">
             <img src="assets/pdf-pages/page-09.webp" alt="RoboClaw 服务对象图，展示普通用户、科研人员和产业开发者三类人群" />
           </figure>
@@ -261,7 +261,7 @@
           <p>如果一句话概括我们想做的事情，那就是：</p>
           <div class="quote">
             <p><strong>RoboClaw 不是 “OpenClaw for robots”。</strong></p>
-            <p><strong>它是 OpenClaw 风格控制平面之上，一个面向任意本体、任意环境、任意任务的具身智能AI助手。</strong></p>
+            <p><strong>它是沿着 OpenClaw 的助手系统思路，继续向真实世界延伸的具身智能AI助手。</strong></p>
           </div>
 
           <div class="signature">
