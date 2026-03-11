@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoboClaw 公众号预览（上一版）</title>
+    <style>
+      :root {
+        --page-bg: #f5f5f5;
+        --paper: #ffffff;
+        --text: #222222;
+        --subtle: #8c8c8c;
+        --heading: #1f1f1f;
+        --link: #576b95;
+        --line: #e7e7e7;
+        --quote-bg: #f7f8fa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--page-bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial,
+          sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      .page {
+        width: min(100%, 740px);
+        margin: 0 auto;
+        background: var(--paper);
+        min-height: 100vh;
+      }
+
+      .article {
+        padding: 28px 20px 44px;
+      }
+
+      .title {
+        margin: 0;
+        color: var(--heading);
+        font-size: 27px;
+        line-height: 1.38;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+        margin-bottom: 26px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .account {
+        color: var(--link);
+        font-weight: 400;
+      }
+
+      .meta-sep,
+      .meta-time {
+        color: var(--subtle);
+      }
+
+      .content {
+        font-size: 17px;
+        line-height: 1.85;
+        color: #222;
+        word-break: break-word;
+      }
+
+      .content p {
+        margin: 0 0 18px;
+      }
+
+      .article-figure {
+        margin: 24px 0 28px;
+      }
+
+      .article-figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid #e2e8e5;
+        background: #f6faf8;
+      }
+
+      .article-figure figcaption {
+        margin-top: 8px;
+        color: var(--subtle);
+        font-size: 13px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .content h2 {
+        margin: 34px 0 14px;
+        color: var(--heading);
+        font-size: 20px;
+        line-height: 1.6;
+        font-weight: 700;
+      }
+
+      .content h3 {
+        margin: 24px 0 10px;
+        color: var(--heading);
+        font-size: 17px;
+        line-height: 1.7;
+        font-weight: 700;
+      }
+
+      .content strong {
+        font-weight: 700;
+      }
+
+      .content ul {
+        margin: 0 0 18px;
+        padding-left: 1.45em;
+      }
+
+      .content li {
+        margin: 0 0 9px;
+      }
+
+      .quote {
+        margin: 22px 0;
+        padding: 12px 14px;
+        background: var(--quote-bg);
+        border-left: 4px solid #d9dde6;
+      }
+
+      .quote p:last-child {
+        margin-bottom: 0;
+      }
+
+      .signature {
+        margin-top: 30px;
+        padding-top: 10px;
+      }
+
+      .tail-note {
+        margin-top: 34px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        color: var(--subtle);
+        font-size: 13px;
+        line-height: 1.75;
+      }
+
+      @media (max-width: 767px) {
+        html,
+        body,
+        .page {
+          background: #ffffff;
+        }
+
+        .article {
+          padding: 24px 16px 36px;
+        }
+
+        .title {
+          font-size: 25px;
+          line-height: 1.42;
+        }
+
+        .meta {
+          margin-bottom: 24px;
+          font-size: 13px;
+        }
+
+        .content {
+          font-size: 16px;
+          line-height: 1.9;
+        }
+
+        .content h2 {
+          font-size: 19px;
+          margin-top: 32px;
+        }
+
+        .content h3 {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <article class="article">
+        <h1 class="title">RoboClaw：我们想做的，不只是一个机器人 Demo，而是具身智能时代的通用框架</h1>
+        <div class="meta">
+          <span class="account">上海交通大学 MINT 实验室联合 Evo-Tech</span>
+          <span class="meta-sep">·</span>
+          <span class="meta-time">2026-03-09 09:41</span>
+        </div>
+
+        <div class="content" id="js_content">
+          <figure class="article-figure">
+            <img src="assets/hero-embodied-custom.webp" alt="RoboClaw 概念头图，展示让机器人快速上手的通用框架，以及全本体抽象、快速熟悉、技能模块化、虚实联动和科研工作台等核心能力" />
+          </figure>
+
+          <p>这两年，具身智能正在快速升温。</p>
+          <p>
+            从大模型，到 VLA，到世界模型，从仿真训练，到真实机器人部署，越来越多团队开始相信：下一代 AI，不会只停留在屏幕里，它会真正进入物理世界，理解环境、调用工具、完成任务。
+          </p>
+          <p>但在这个过程中，我们也越来越清楚地看到一个现实问题：</p>
+          <div class="quote">
+            <p><strong>今天已经有很多模型、很多算法、很多机器人系统，但真正“让不同的人快速把不同的本体用起来”的统一框架，仍然非常缺。</strong></p>
+          </div>
+          <p>
+            如果今天随便给你一个机器人本体，再加一个摄像头，你能不能让它快速理解自己、理解环境，并开始做一些简单但真实的任务？
+          </p>
+          <p>
+            如果这个本体换了，传感器换了，环境换了，任务换了，系统还能不能尽可能低成本地继续工作？
+          </p>
+          <p>
+            如果未来一个学生、一个科研团队、一个企业工程师，都想用同一套框架去连接不同机器人、不同传感器、不同任务流，这套系统应该长成什么样？
+          </p>
+          <p>这正是我们想做 <strong>RoboClaw</strong> 的原因。</p>
+          <div class="quote">
+            <p><strong>RoboClaw 想做的，不是一次性的效果展示，也不是给某个模型套一层机器人接口。</strong></p>
+            <p><strong>我们希望它成为一个面向现实世界的具身智能操作框架。</strong></p>
+          </div>
+          <figure class="article-figure">
+            <img src="assets/pdf-pages/page-01.webp" alt="RoboClaw 首页总览图，概括面向现实世界的具身智能操作框架定位" />
+          </figure>
+
+          <h2>为什么是 RoboClaw？</h2>
+          <p>我们做 RoboClaw，并不是想重复造一个“又一个机器人软件”。</p>
+          <p>我们真正想解决的是一个更基础的问题：</p>
+          <div class="quote">
+            <p><strong>如何让任意本体，在尽可能短的熟悉和适配之后，形成统一能力抽象，并开始完成可执行、可验证、可扩展的任务。</strong></p>
+          </div>
+          <p>
+            这里的“任意本体”，可以是机械臂、移动底盘、移动机械臂，未来也可以是更多不同形态的机器人系统。
+          </p>
+          <p>
+            这里的“任意环境”，不只是仿真环境，也包括真实的桌面、房间、实验空间、半结构化场景。
+          </p>
+          <p>
+            这里的“任意任务”，不意味着系统一开始就无所不能，而是意味着：<strong>任务可以被拆解、能力可以被组合、执行可以被监督、系统可以在运行中不断积累经验。</strong>
+          </p>
+          <p>我们相信，具身智能真正的机会，不只在更大的模型里，也在更好的框架里。</p>
+          <h2>从 OpenClaw 到 RoboClaw：我们想往前再走一步</h2>
+          <p>OpenClaw 这类系统给了我们很重要的启发。</p>
+          <p>
+            它让我们看到，一个优秀的 AI 系统，不只是模型本身，更重要的是它背后的统一控制平面：如何接入不同入口，如何管理节点，如何组织技能，如何调度会话，如何让能力以模块化的方式被复用。
+          </p>
+          <p>但当系统从“数字世界中的助手”走向“现实世界中的执行者”，问题会立刻变得更复杂。</p>
+          <p>
+            因为机器人不是一个纯软件对象。它有本体，有关节，有控制频率，有传感器，有执行限制，有空间约束，有安全边界，有环境噪声，也有真实失败。
+          </p>
+          <div class="quote">
+            <p><strong>所以在我们看来，RoboClaw 不应该只是 OpenClaw 的机器人版本。</strong></p>
+          </div>
+          <p>它应该在统一控制平面的基础上，进一步补齐属于具身智能的几层核心能力：</p>
+          <ul>
+            <li>本体抽象</li>
+            <li>传感器抽象</li>
+            <li>环境理解</li>
+            <li>本体认知与环境建联</li>
+            <li>技能执行与验证</li>
+            <li>仿真与现实联动</li>
+            <li>实验监督、复位、训练和评估闭环</li>
+          </ul>
+          <p>
+            也就是说：<strong>OpenClaw 更像一个优秀的控制面起点，而 RoboClaw 想做的是一个真正面向现实世界的具身智能运行框架。</strong>
+          </p>
+          <figure class="article-figure">
+            <img src="assets/pdf-pages/page-04.webp" alt="RoboClaw 核心哲学图，解释从任务、本体、模型到现实行动的整体逻辑" />
+          </figure>
+
+          <h2>我们心中的 RoboClaw，应该服务三类人</h2>
+          <figure class="article-figure">
+            <img src="assets/pdf-pages/page-09.webp" alt="RoboClaw 服务对象图，展示普通用户、科研人员和产业开发者三类人群" />
+          </figure>
+          <h3>1. 对普通用户和学生：更快上手，更低门槛</h3>
+          <p>未来的机器人不应该只属于实验室里最懂系统的人。</p>
+          <p>
+            我们希望普通用户、学生、创客拿到一个本体之后，不需要先啃完整套机器人中间件，也不需要先写大量底层代码。只要接好设备，完成一个基础的熟悉流程，它就应该能够开始做一些简单但真实的事情。
+          </p>
+          <p>比如观察、移动、抓取、放置、巡检，或者在受限场景里完成一个小任务。</p>
+          <p>我们想做的是把“让机器人跑起来”这件事，变成更多人可以接近、可以尝试、可以持续探索的事情。</p>
+
+          <h3>2. 对科研人员：不只是执行，更是实验工作台</h3>
+          <p>对于研究者来说，问题从来不只是“能不能动”。</p>
+          <p>他们真正需要的是一整套实验与研究闭环：</p>
+          <ul>
+            <li>如何组织训练</li>
+            <li>如何进行推理与部署</li>
+            <li>如何监控本体执行质量</li>
+            <li>如何判断什么时候该急停，什么时候该重置环境</li>
+            <li>如何计算合理的成功率</li>
+            <li>如何分析失败原因</li>
+            <li>如何修改训练参数并重新实验</li>
+          </ul>
+          <p>
+            所以我们希望，RoboClaw 不只是任务执行器，还是一个能承接 <strong>实验、训练、推理、监督、回放、分析</strong> 的研究平台。
+          </p>
+
+          <h3>3. 对企业和深度开发者：不是封闭产品，而是可扩展底座</h3>
+          <p>企业的需求永远会更复杂。</p>
+          <p>
+            他们会有自己的本体、自己的传感器组合、自己的场景约束、自己的控制逻辑、自己的数据闭环、自己的任务定义。
+          </p>
+          <p>因此，RoboClaw 不应该是一个封闭盒子。它应该是一个可以被深度修改、深度适配、深度扩展的平台：</p>
+          <ul>
+            <li>可以接入新的本体</li>
+            <li>可以接入新的传感器</li>
+            <li>可以定义新的技能</li>
+            <li>可以替换某些核心执行模块</li>
+            <li>可以接入自己的训练和评估系统</li>
+            <li>可以服务自己的业务场景</li>
+          </ul>
+          <p>对于企业来说，RoboClaw 应该是一块地基，而不是一堵墙。</p>
+
+          <h2>我们认为，RoboClaw 至少应该有这几层核心架构</h2>
+          <h3>第一层：统一控制平面</h3>
+          <p>
+            这是整个系统的中枢。它负责连接用户、机器人、本体节点、传感器节点、仿真节点、技能节点和任务流，统一管理权限、注册、调度、日志与事件。
+          </p>
+          <p>
+            这一层会延续 OpenClaw 式的控制平面思路，比如 Gateway、节点接入、配对、能力声明和统一协议这些设计。
+          </p>
+
+          <h3>第二层：本体与传感器抽象层</h3>
+          <p>未来的具身系统，面对的不会只是某一种固定机器人。</p>
+          <p>
+            会有不同形态的本体，不同数量和类型的关节，不同的末端执行器，不同的控制接口，不同的相机，不同的深度传感器，不同的触觉与状态反馈。
+          </p>
+          <p>所以，RoboClaw 必须先把这些对象统一抽象成可组合的能力结构：</p>
+          <ul>
+            <li>本体是什么</li>
+            <li>传感器是什么</li>
+            <li>它能做什么动作</li>
+            <li>它的控制和观测边界是什么</li>
+            <li>它的工作空间和安全边界是什么</li>
+          </ul>
+          <p>如果这一层做不好，后面的泛化就无从谈起。</p>
+
+          <h3>第三层：本体认知与环境建联层</h3>
+          <p>这是我们非常重视的一层。</p>
+          <p>在 RoboClaw 里，一个新本体接进来之后，系统不应该假装自己立刻什么都懂。它应该先经历一个熟悉过程：</p>
+          <ul>
+            <li>认识自己的关节和动作</li>
+            <li>认识自己的传感器</li>
+            <li>建立空间中的位置关系</li>
+            <li>理解一个动作会在现实中带来什么变化</li>
+            <li>形成对当前本体与环境的初步认知</li>
+          </ul>
+          <p>
+            我们认为，这一步会成为未来具身智能框架非常关键的能力之一。不是“先验知道一切”，而是“有能力快速认识自己和环境”。
+          </p>
+          <h3>第四层：任务与技能层</h3>
+          <p>RoboClaw 不应该让用户直接面对底层硬件接口。</p>
+          <p>
+            在它之上，任务应该被组织成标准化、可组合、可验证的技能图。比如 observe、move、pick、place、inspect、reset，未来都应该成为可被统一调度的能力单元。
+          </p>
+          <p>
+            无论是自然语言指令、规则系统，还是策略模型，最后都应该被落到这层进行组合和执行。
+          </p>
+
+          <h3>第五层：执行与安全层</h3>
+          <p>当一个系统真正开始影响现实世界，安全就不再是附属功能，而是系统本身的一部分。</p>
+          <p>所以 RoboClaw 必须具备：</p>
+          <ul>
+            <li>实时执行监督</li>
+            <li>异常中断</li>
+            <li>人工接管</li>
+            <li>本体复位</li>
+            <li>环境复位</li>
+            <li>运行状态监控</li>
+            <li>成功率与失败率统计</li>
+            <li>episode 记录和回放</li>
+            <li>安全边界管理</li>
+          </ul>
+          <p>我们希望它不是“出了问题再复盘”，而是“在运行过程中就具备判断和收敛能力”。</p>
+          <h3>第六层：仿真与学习层</h3>
+          <p>我们也非常认同仿真的价值。</p>
+          <p>
+            仿真和现实不是冲突关系，它本质上是一个独立而重要的层。它可以帮助系统做策略预热、课程生成、实验回归、批量训练、结果复现，也可以帮助研究者更快验证一个想法。
+          </p>
+          <p>所以在 RoboClaw 里，仿真不应该只是外挂工具。它应该被设计成和现实世界并列的一层能力底座：</p>
+          <ul>
+            <li>同一个任务，可以在仿真和现实中复用</li>
+            <li>同一个技能，可以同时支持 sim 和 real</li>
+            <li>同一套 episode 记录，可以贯穿训练、推理、评估和复盘</li>
+          </ul>
+          <p>现实世界是目标，仿真世界是加速器。两者并不冲突。</p>
+
+          <h2>我们为什么现在做这件事</h2>
+          <p>因为我们相信，具身智能不会只属于少数顶尖实验室，也不会只属于少数封闭系统。</p>
+          <p>它应该逐渐变成一种更普遍的能力基础设施。而在这个过程中，框架会变得越来越重要。</p>
+          <p>
+            模型会持续进步，硬件会持续进步，传感器会持续进步，仿真平台和训练方法也会持续进步。但如果没有一个好的框架，这些能力就很难真正被更多人低成本地组织起来、复用起来、迁移起来。
+          </p>
+          <p>这也是我们想做 RoboClaw 的根本原因。</p>
+          <div class="quote">
+            <p><strong>但如果只追求一个 Demo，其实并不难。</strong></p>
+            <p><strong>真正难的是，当本体、环境、任务和用户都发生变化之后，系统还能不能继续工作，继续积累，继续复用，继续成长。</strong></p>
+          </div>
+          <h2>写在最后</h2>
+          <p>RoboClaw 还在路上，但方向已经逐渐清晰。</p>
+          <p>
+            它会是一套面向现实世界的具身智能框架；它会同时拥抱真实执行与仿真加速；它会同时面向普通用户、科研人员和企业开发者；它也会努力成为一个可扩展、可复用、可持续演进的平台。
+          </p>
+          <p>我们才刚刚开始。但我们相信，这是一件值得认真去做、并长期去做的事情。</p>
+          <div class="quote">
+            <p><strong>RoboClaw，面向现实世界的具身智能操作框架。</strong></p>
+          </div>
+
+          <div class="signature">
+            <p>上海交通大学 MINT 实验室联合 Evo-Tech</p>
+            <p>欢迎对具身智能、机器人系统、训练平台、技能框架与真实世界部署感兴趣的朋友交流与共创。</p>
+          </div>
+
+          <div class="tail-note">当前是网页预览版，样式已向微信公众号文章页收敛，用于快速观察正文放入公众号后的阅读效果。</div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
