@@ -68,6 +68,8 @@ OpenClaw 给了我们一个很重要的起点：作为个人AI助手，它已经
 上海交通大学 MINT 实验室  
 欢迎对具身智能、机器人系统、训练平台、技能AI助手与真实世界部署感兴趣的朋友交流与共创。
 
+项目地址：https://github.com/MINT-SJTU/RoboClaw
+
 ---
 
 当前是网页预览版导出的 Markdown 版本。
