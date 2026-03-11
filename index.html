@@ -230,7 +230,8 @@
           <p>但机器人系统比数字世界的助手更复杂。它有本体、有传感器、有运动学、有空间约束、有安全边界，也有真实失败。</p>
           <p>所以在 RoboClaw 里，OpenClaw 更像是 <strong>Control Plane</strong>，而不是整个系统本身。</p>
           <figure class="article-figure">
-            <img src="assets/pdf-pages/page-04.webp" alt="RoboClaw 核心哲学图，解释从任务、本体、模型到现实行动的整体逻辑" />
+            <img src="assets/roboclaw-architecture-overview.png" alt="RoboClaw 分层架构总览图，展示 OpenClaw 脑层、RoboClaw runtime、中间执行层，以及仿真和真机后端的关系" />
+            <figcaption>RoboClaw 当前分层草图：OpenClaw 负责控制平面，RoboClaw runtime 承担具身与实验核心，ROS2 作为执行基底连接仿真与真机。</figcaption>
           </figure>
 
           <h2>我们现在认同的架构</h2>
