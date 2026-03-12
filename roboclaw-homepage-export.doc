@@ -1,0 +1,169 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="ProgId" content="Word.Document">
+  <meta name="Generator" content="OpenAI Codex">
+  <meta name="Originator" content="OpenAI Codex">
+  <title>RoboClaw 主页导出</title>
+  <style>
+    @page Section1 {
+      size: 595.3pt 841.9pt;
+      margin: 72pt 72pt 72pt 72pt;
+    }
+    div.Section1 { page: Section1; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", "SimSun", sans-serif;
+      color: #222222;
+      line-height: 1.8;
+      font-size: 12pt;
+    }
+    h1 {
+      font-size: 22pt;
+      line-height: 1.35;
+      margin: 0 0 10pt 0;
+      color: #1f1f1f;
+    }
+    h2 {
+      font-size: 16pt;
+      line-height: 1.5;
+      margin: 20pt 0 8pt 0;
+      color: #1f1f1f;
+    }
+    p {
+      margin: 0 0 10pt 0;
+    }
+    ul {
+      margin: 0 0 10pt 20pt;
+    }
+    li {
+      margin: 0 0 6pt 0;
+    }
+    .hero {
+      background: #f3f7fb;
+      border: 1pt solid #d7e2ef;
+      padding: 14pt 16pt;
+      margin: 0 0 18pt 0;
+    }
+    .meta {
+      color: #666666;
+      font-size: 10.5pt;
+      margin: 0 0 18pt 0;
+    }
+    .quote {
+      border-left: 3pt solid #d9dde6;
+      background: #f7f8fa;
+      padding: 10pt 12pt;
+      margin: 12pt 0;
+    }
+    .figure {
+      margin: 14pt 0 18pt 0;
+      text-align: center;
+    }
+    .figure img {
+      width: 100%;
+      max-width: 460pt;
+      border: 1pt solid #e2e8e5;
+    }
+    .figcaption {
+      color: #666666;
+      font-size: 9.5pt;
+      margin-top: 6pt;
+    }
+    .tail {
+      margin-top: 20pt;
+      padding-top: 10pt;
+      border-top: 1pt solid #e7e7e7;
+      color: #666666;
+      font-size: 10pt;
+    }
+    a {
+      color: #576b95;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="Section1">
+    <div class="hero">
+      <h1>RoboClaw：首个具身智能时代的AI助手</h1>
+      <p class="meta">上海交通大学 MINT 实验室 · 2026-03-11 19:30</p>
+      <p>导出来源：<a href="https://github.com/Elvin-yk/roboclaw-wechat-preview">https://github.com/Elvin-yk/roboclaw-wechat-preview</a></p>
+    </div>
+
+    <p>先说明白一件事：RoboClaw 还在非常早期的阶段。</p>
+    <p>它最后会长成什么样，现在谁都不知道。我们能确定的，只是一个方向：做一个真正面向本体、环境和任务迁移的 AI 助手。</p>
+    <p>所以这篇文章不是宣布完成，而是把当前的判断和结构摊开，也希望更多人一起把这件事做成。</p>
+
+    <p>这两年，具身智能很热。真机、VLA、世界模型、仿真训练都在快速推进。</p>
+    <p>但真到落地时，一个问题始终没有被很好解决：</p>
+
+    <div class="quote">
+      <p><b>当本体变了、传感器变了、环境变了、任务变了，系统、技能和记忆还能不能快速迁移？</b></p>
+    </div>
+
+    <div class="figure">
+      <img src="https://raw.githubusercontent.com/Elvin-yk/roboclaw-wechat-preview/main/assets/pdf-pages/img-04.png" alt="RoboClaw 核心哲学图">
+      <div class="figcaption">RoboClaw 核心哲学图，解释从任务、本体、模型到现实行动的整体逻辑</div>
+    </div>
+
+    <p>我们做 <b>RoboClaw</b>，就是想回答这个问题。</p>
+
+    <div class="quote">
+      <p><b>RoboClaw 不是给某一台机器人包一层智能体外壳，也不是把 OpenClaw 直接接上机器人接口。</b></p>
+      <p><b>它要做的是一个面向任意本体、任意环境、任意任务的具身智能AI助手。</b></p>
+    </div>
+
+    <p>OpenClaw 给了我们一个很重要的起点：作为个人AI助手，它已经把节点接入、会话管理、工具编排和多入口交互组织成了一个完整系统。</p>
+    <p>但机器人系统比数字世界的助手更复杂。它有本体、有传感器、有运动学、有空间约束、有安全边界，也会在真实世界里出错。</p>
+
+    <div class="figure">
+      <img src="https://raw.githubusercontent.com/Elvin-yk/roboclaw-wechat-preview/main/assets/roboclaw-architecture-simple-v2.png" alt="RoboClaw 架构图">
+      <div class="figcaption">RoboClaw 简洁版架构图，展示助手层、具身层、执行层和载体层，以及具身层的五个核心能力</div>
+    </div>
+
+    <h2>我们现在认同的架构</h2>
+    <p><b>1. 助手层</b>：负责用户、会话、智能体编排、工具路由和远程接入。</p>
+    <p><b>2. 具身层</b>：这是 RoboClaw 最核心的一层，重点不是“接上机器人”，而是让系统真正理解这个身体。</p>
+    <ul>
+      <li>本体建模：系统需要先明确关节、末端执行器、传感器和约束分别是什么。</li>
+      <li>空间建联：系统需要把坐标系、运动学、工作空间、安全边界和可达范围真正组织起来。</li>
+      <li>能力抽象：系统需要把底层硬件能力转成可组合的语义动作和能力图谱。</li>
+      <li>熟悉校准：系统需要让新本体在试探、校验和对齐之后逐步形成稳定认知。</li>
+      <li>训练辅助：系统还需要帮助人组织本体训练、判断急停时机、恢复本体和环境，并决定下一步如何继续。</li>
+    </ul>
+    <p><b>3. 执行层</b>：以 ROS2 作为执行中间层，负责连接控制器、消息通道、服务调用、动作执行，以及安全监督和状态回传。</p>
+    <p><b>4. 载体层</b>：负责连接仿真环境与真实机器人，承接部署、验证和回传。</p>
+
+    <p>这里我们最看重的一点，是 <b>熟悉过程</b>。</p>
+    <p>一个新本体接进来，系统不应该假装自己立刻全懂。它应该先枚举关节和传感器，做小幅试探动作，建立动作和观测的对应关系，校验初始位、运动边界和方向，再形成当前状态下的能力图谱。</p>
+    <p>这也是我们为什么不希望把机器人差异都丢给提示词，更不希望大模型直接输出低级关节指令。更合理的链路应该是：</p>
+
+    <div class="quote">
+      <p><b>用户目标 -&gt; 任务理解与技能选择 -&gt; 动作协议与执行监督 -&gt; ROS2 执行 -&gt; 仿真或真机本体</b></p>
+    </div>
+
+    <p>也就是说，RoboClaw 提供的不是一组预先写好的功能，而是一套构建这些语义动作和技能能力的方式，让同一套任务可以迁移到不同本体上，而不是每换一个机器人就重写一遍底层控制。</p>
+
+    <div class="figure">
+      <img src="https://raw.githubusercontent.com/Elvin-yk/roboclaw-wechat-preview/main/assets/pdf-pages/img-09.png" alt="RoboClaw 服务对象图">
+      <div class="figcaption">RoboClaw 服务对象图，展示普通用户、科研人员和产业开发者三类人群</div>
+    </div>
+
+    <h2>写在最后</h2>
+    <p>如果一句话概括我们想做的事情，那就是：</p>
+
+    <div class="quote">
+      <p><b>RoboClaw 不是“机器人版 OpenClaw”。</b></p>
+      <p><b>它是沿着 OpenClaw 的助手系统思路，继续向真实世界延伸的具身智能AI助手。</b></p>
+    </div>
+
+    <p>上海交通大学 MINT 实验室</p>
+    <p>欢迎对具身智能、机器人系统、训练平台、技能AI助手与真实世界部署感兴趣的朋友交流与共创。</p>
+    <p>项目地址：<a href="https://github.com/MINT-SJTU/RoboClaw">https://github.com/MINT-SJTU/RoboClaw</a></p>
+
+    <p class="tail">当前文件为 Word 兼容导出版（HTML .doc）。如需标准 .docx，可用 Word/WPS 打开此文件后直接“另存为” .docx。</p>
+  </div>
+</body>
+</html>
