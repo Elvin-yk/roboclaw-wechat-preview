@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit DOCX if changed
         run: |
-          if git diff --quiet -- roboclaw-homepage-export.docx; then
+          if [ -z "$(git status --porcelain -- roboclaw-homepage-export.docx)" ]; then
             echo "No DOCX changes"
             exit 0
           fi
